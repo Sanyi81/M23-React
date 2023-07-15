@@ -2,8 +2,7 @@ import React, {useEffect, useRef} from 'react';
 
 const UserPage = () => {
 
-
-const idRef = useRef('');
+    const idRef = useRef('');
     const nameRef = useRef('');
     const usernameRef = useRef('');
     const emailRef= useRef('');
@@ -66,7 +65,6 @@ const idRef = useRef('');
 
 useEffect(() => {
     console.log('looking')
-
 });
 
 
@@ -76,71 +74,101 @@ useEffect(() => {
                 <label>
                     New User
                     <br/>
+                    <label>
                     id:
                     <br/>
                     <input type="number" autoComplete="id" ref={idRef}/>
+                        </label>
                     <br/>
+                    <label>
                     name:
                     <br/>
                     <input type="text" autoComplete="name" ref={nameRef}/>
+                        </label>
                     <br/>
+                    <label>
                     username:
                     <br/>
                     <input type="text" autoComplete="username" ref={usernameRef}/>
+                        </label>
                     <br/>
+                    <label>
                     email:
                     <br/>
                     <input type="email" autoComplete="email" ref={emailRef}/>
+                        </label>
                     <br/>
                     address:
                     <br/>
+                    <label>
                         street:
                     <br/>
                         <input type="text" autoComplete="street" ref={streetRef}/>
+                        </label>
                     <br/>
+                    <label>
                         suite:
                     <br/>
                         <input type="text" autoComplete="suite" ref={suiteRef}/>
+                        </label>
                     <br/>
+                    <label>
                         city:
                     <br/>
                         <input type="text" autoComplete="city" ref={cityRef}/>
+                        </label>
                     <br/>
+                    <label>
                         zipcode:
                     <br/>
                         <input type="number" autoComplete="zipcode" ref={zipcodeRef}/>
+                        </label>
                     <br/>
                         geo:
                     <br/>
+                    <label>
                             lat:
                     <br/>
                             <input type="number" autoComplete="lat" ref={latRef}/>
+                        </label>
                     <br/>
+                    <label>
                             lng:
                     <br/>
                             <input type="number" autoComplete="lng" ref={lngRef}/>
+                        </label>
                     <br/>
+                    <label>
                     phone:
                     <br/>
                     <input type="number" autoComplete="phone" ref={phoneRef}/>
+                        </label>
                     <br/>
+                    <label>
                     website:
                     <br/>
                     <input type="text" autoComplete="website" ref={websiteRef}/>
+                        </label>
                     <br/>
                     company:
                     <br/>
+                    <label>
                         name:
                     <br/>
                         <input type="text" autoComplete="companyName" ref={companyNameRef}/>
+                        </label>
                     <br/>
+                    <label>
                         catchPhrase:
                     <br/>
                         <input type="text" autoComplete="catchPhrase" ref={catchPhraseRef}/>
+                        </label>
                     <br/>
+                    <label>
                         bs:
                     <br/>
                         <input type="text" autoComplete="bs" ref={bsRef}/>
+                        </label>
                     <br/>
                 </label>
                 <button>Save</button>
