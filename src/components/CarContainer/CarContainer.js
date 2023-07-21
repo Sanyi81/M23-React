@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import CarForm from "./CarForm/CarForm";
 import Cars from "./Cars/Cars";
 
 const CarContainer = () => {
+    const [onSave, setOnSave] = useState(null);
+    const [carForUpdate, setCarForUpdate] = useState(null);
+
     return (
         <div>
-            <CarForm/>
+            <CarForm setOnSave={setOnSave} carForUpdate={carForUpdate} setCarForUpdate={setCarForUpdate}/>
             <hr/>
-            <Cars/>
+            <Cars onSave={onSave} setOnSave={setOnSave} setCarForUpdate={setCarForUpdate}/>
         </div>
     );
 };
