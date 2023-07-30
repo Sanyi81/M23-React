@@ -1,0 +1,12 @@
+.Main {
+    background-color: lightsteelblue;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.Main a[class='active'] {
+    color: red;
+}
