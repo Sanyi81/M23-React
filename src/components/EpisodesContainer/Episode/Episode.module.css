@@ -1,0 +1,13 @@
+.Episode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    border: 2px solid black;
+}
+
+.Episode:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
